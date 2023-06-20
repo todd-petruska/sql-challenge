@@ -10,11 +10,10 @@ SELECT employees.first_name, employees.last_name,  employees.hire_date
 FROM employees
 WHERE hire_date BETWEEN '1986-1-1' AND '1986-12-31'
 ORDER BY hire_date ASC;
-/Users/tp/Documents/old_notebook/sql-challenge/final_combined.sql
 
 --3. List the manager of each department along with their department number, department name, employee number, last name, and first name.
 SELECT departments.dept_no, departments.dept_name, dept_manager.emp_no, employees.last_name, employees.first_name 
-FROM dept_manager/Users/tp/Documents/old_notebook/sql-challenge/final_combined.sql
+FROM dept_manager
 JOIN employees ON
 dept_manager.emp_no = employees.emp_no
 JOIN departments ON
