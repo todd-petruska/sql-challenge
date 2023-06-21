@@ -3,11 +3,11 @@
 --Create a table for employees
 CREATE TABLE "employees" (
     "emp_no" int NOT NULL,
-    "emp_title_id" VARCHAR NOT NULL,
+    "emp_title_id" VARCHAR(5) NOT NULL,
     "birth_date" date NOT NULL,
-    "first_name" VARCHAR NOT NULL,
-    "last_name" VARCHAR NOT NULL,
-    "sex" VARCHAR   NOT NULL,
+    "first_name" VARCHAR(20) NOT NULL,
+    "last_name" VARCHAR(20) NOT NULL,
+    "sex" VARCHAR(1) NOT NULL,
     "hire_date" date   NOT NULL,
     CONSTRAINT "pk_employees" PRIMARY KEY (
         "emp_no"
@@ -22,7 +22,7 @@ CREATE TABLE "salaries" (
 
 --Create a table for department manager
 CREATE TABLE "dept_manager" (
-    "dept_no" VARCHAR NOT NULL,
+    "dept_no" VARCHAR(4) NOT NULL,
     "emp_no" int NOT NULL,
     CONSTRAINT "pk_dept_manager" PRIMARY KEY (
         "emp_no"
@@ -32,13 +32,13 @@ CREATE TABLE "dept_manager" (
 --Create table for departments associated with the employees
 CREATE TABLE "dept_emp" (
     "emp_no" int NOT NULL,
-    "dept_no" VARCHAR NOT NULL
+    "dept_no" VARCHAR(20) NOT NULL
 );
 
 --Create a table for titles
 CREATE TABLE "titles" (
-    "title_id" VARCHAR NOT NULL,
-    "title" VARCHAR NOT NULL
+    "title_id" VARCHAR(5) NOT NULL,
+    "title" VARCHAR(20) NOT NULL
 );
 
 --Create a table for departments
