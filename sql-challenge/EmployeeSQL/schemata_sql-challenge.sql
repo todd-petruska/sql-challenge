@@ -1,3 +1,11 @@
+-- Drop table if it already exists
+DROP TABLE IF EXISTS departments;
+DROP TABLE IF EXISTS dept_emp;
+DROP TABLE IF EXISTS dept_manager;
+DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS salaries;
+DROP TABLE IF EXISTS titles;
+
 -- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 
 --Create a table for employees
