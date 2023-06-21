@@ -51,8 +51,8 @@ CREATE TABLE "titles" (
 
 --Create a table for departments
 CREATE TABLE "departments" (
-    "dept_no" VARCHAR NOT NULL,
-    "dept_name" VARCHAR NOT NULL
+    "dept_no" VARCHAR(4) NOT NULL,
+    "dept_name" VARCHAR(20) NOT NULL
 );
 
 --Alter the table and add contraints for the Primary and Foreign Keys
